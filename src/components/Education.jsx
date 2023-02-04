@@ -15,24 +15,34 @@ const card2Variant = {
 };
 
 function Education() {
-  const [ref, inView] = useInView({ threshold: 0 });
-  const controls = useAnimation();
+  const [ref, inView] = useInView({ threshold: 0.2 });
+  const animation1 = useAnimation();
+  const animation2 = useAnimation();
 
   useEffect(() => {
-    if (inView) controls.start("visible");
-    if (!inView) {
-      controls.start("hidden");
+    if (inView) {
+      animation1.start("visible");
     }
-  }, [controls, inView]);
+    if (!inView) {
+      animation1.start("hidden");
+    }
+  }, [animation1, inView]);
+  useEffect(() => {
+    if (inView) {
+      animation2.start("visible");
+    }
+    if (!inView) {
+      animation2.start("hidden");
+    }
+  }, [animation2, inView]);
 
   return (
-    <div className="section white-font">
+    <div ref={ref} className="section white-font viewheight">
       <h2 className="heading">Education</h2>
       <div className="education-container">
         <motion.div
           variants={card1Variant}
-          ref={ref}
-          animate={controls}
+          animate={animation1}
           initial="hidden"
           className="education-card"
         >
@@ -53,7 +63,7 @@ function Education() {
         <motion.div
           variants={card2Variant}
           ref={ref}
-          animate={controls}
+          animate={animation2}
           initial="hidden"
           className="education-card"
         >
