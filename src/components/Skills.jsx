@@ -5,7 +5,9 @@ const Skills = () => (
     <h2 className="heading underline">Skills</h2>
     <div className="skills-container">
       <div>
-        <h4>Core</h4>
+        <h4>
+          <b>Core</b>
+        </h4>
         <ul>
           <li>JavaScript</li>
           <li>Java</li>
@@ -16,7 +18,9 @@ const Skills = () => (
         </ul>
       </div>
       <div>
-        <h4>Web</h4>
+        <h4>
+          <b>Web</b>
+        </h4>
         <ul>
           <li>React.js</li>
           <li>Redux</li>
@@ -29,7 +33,9 @@ const Skills = () => (
         </ul>
       </div>
       <div>
-        <h4>Design</h4>
+        <h4>
+          <b>Design</b>
+        </h4>
         <ul>
           <li>UML</li>
           <li>ER-Diagrams</li>
