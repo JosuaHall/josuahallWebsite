@@ -5,12 +5,12 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const card1Variant = {
-  visible: { opacity: 1, x: 0, transition: { duration: 1 } },
+  visible: { opacity: 1, x: 0, transition: { delay: 0.5, duration: 0.5 } },
   hidden: { opacity: 0, x: "-100%" },
 };
 
 const card2Variant = {
-  visible: { opacity: 1, x: 0, transition: { duration: 1 } },
+  visible: { opacity: 1, x: 0, transition: { delay: 0.5, duration: 0.5 } },
   hidden: { opacity: 0, x: "100%" },
 };
 
