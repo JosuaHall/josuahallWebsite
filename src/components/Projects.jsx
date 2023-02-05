@@ -100,7 +100,7 @@ const Projects = () => (
                   border: "solid rgb(67 81 115) 1px",
                 }}
                 className="btn btn-primary mx-2"
-                onClick={() => window.open("https://athletia.onrender.com")}
+                onClick={() => window.open("https://athletia.netlify.app")}
               >
                 View App
               </button>
