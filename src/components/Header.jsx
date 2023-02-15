@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-
+import Pdf from "../images/resumee.pdf";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -39,6 +39,16 @@ function Navigation() {
           <p>Software Engineer</p>
         </div>
       </div>
+
+      <a href={Pdf} target="_blank" rel="noreferrer">
+        <div
+          className="btn btn-primary m-2"
+          style={{ backgroundColor: "#243c54", borderColor: "#243c54" }}
+        >
+          Resumee
+        </div>
+      </a>
+
       <div>
         <div className="d-flex justify-content-center">
           <div

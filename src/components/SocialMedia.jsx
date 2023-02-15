@@ -6,16 +6,6 @@ const SocialMedia = () => (
     <h2>Social Media</h2>
     <div className="social-media-container">
       <div className="social-icons">
-        <div
-          onClick={() => window.open("https://www.instagram.com/josuahall/")}
-        >
-          <FontAwesomeIcon
-            icon={["fab", "instagram"]}
-            className="insta"
-            color="#d6249f"
-            size={"2x"}
-          />
-        </div>
         <div onClick={() => window.open("mailto:halljosua@web.de")}>
           <FontAwesomeIcon
             icon={["fab", "google"]}

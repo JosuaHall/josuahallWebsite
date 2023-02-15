@@ -23,6 +23,7 @@ const Skills = () => (
         </h4>
         <ul>
           <li>React.js</li>
+          <li>React Native</li>
           <li>Redux</li>
           <li>Node.js</li>
           <li>Express.js</li>
