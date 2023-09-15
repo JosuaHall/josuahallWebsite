@@ -21,16 +21,6 @@ const Navigation = () => (
     <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
       <Nav>
         <Nav.Link as="div" style={{ cursor: "pointer" }}>
-          <Link activeClass="active" offset={-64} smooth spy to="about">
-            About Me
-          </Link>
-        </Nav.Link>
-        <Nav.Link as="div" style={{ cursor: "pointer" }}>
-          <Link activeClass="active" offset={-64} smooth spy to="background">
-            Background
-          </Link>
-        </Nav.Link>
-        <Nav.Link as="div" style={{ cursor: "pointer" }}>
           <Link activeClass="active" offset={-64} smooth spy to="education">
             Education
           </Link>

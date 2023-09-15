@@ -8,17 +8,11 @@ const Impressum = () => (
         <p>
           ​Josua Hall
           <br />
-          One Camino Santa Maria
-          <br />
-          San Antonio, Texas 78228
-          <br />
-          United States
-          <br />
           halljosua@web.de
           <br />
           Phone Number
           <br />
-          (210) 840 - 1357
+          (210) 725 - 7061
         </p>
       </div>
       <div>

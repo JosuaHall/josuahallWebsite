@@ -6,6 +6,14 @@ html, body{
   overflow-x: hidden;
 }
 
+.viewheight{
+  min-height: 100vh;
+}
+
+.vid{
+  width: 60%;
+}
+
 .active{
   text-decoration: none;
   color: #f5f5f7;
@@ -27,7 +35,7 @@ p {
 
 
 .underline{
-  padding: 1em;
+  padding-bottom: 1em;
   border-bottom: solid rgb(167, 167, 167) 1px;
   margin: 0 auto;
   width: 40%;
@@ -94,7 +102,7 @@ p {
   color: #f5f5f7;
 }
 .section {
-  padding: 2em 0;
+  padding: 3em 0;
 }
 
 
@@ -151,12 +159,14 @@ p {
 
 .education-card {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.2fr;
   gap: 1em;
   text-align: left;
   border: solid #f5f5f7 1px;
   border-radius: 2.5em;
   padding: .1em;
+  background-color: black;
+  color: white;
 
   -webkit-box-shadow: 0px 0px 14px 5px rgba(0,80,133,0.52);
   -moz-box-shadow: 0px 0px 14px 5px rgba(0,80,133,0.52);
@@ -185,17 +195,39 @@ p {
 .skills-container{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  padding: 4em 0;
+}
+
+.app-header{
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 2em 0;
+}
+
+.athletia-logo{
+  width: 100px;
+  border-radius: 1em;
+}
+
+.app-store-cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  width: 100%;
+  column-gap: 1em;
+}
+
+.app-store-card {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 1em;
+ 
 }
 
 .projects-container {
   text-align: center;
 }
-.projects-container :nth-child(even) {
-  scale: 1.02;
-}
-.projects-container :nth-child(odd) {
-  scale: .99
-}
+
 .projects-container >p  {
   margin: 0 auto;
   width: 80%;
@@ -311,6 +343,11 @@ li {
   justify-content: center;
 }
 
+.image-container{
+  display: flex;
+  gap:1em
+}
+
 
 @media only screen and (max-width: 767px) {
   /* Your mobile-specific styles here */
@@ -335,6 +372,19 @@ li {
 
   p{
     font-size: .9em !important;
+  }
+
+  .vid{
+    width: 100%;
+  }
+
+ .app-store-cards{
+    grid-template-columns: 1fr 1fr 1fr;
+    overflow: hidden;
+  }
+
+  .image-container {
+    display: none;
   }
  
   .content-container {
@@ -419,6 +469,10 @@ li {
     font-size: 14px !important;
   }
 
+  .vid{
+    width: 100%;
+  }
+
   .projects-card-area{
     display: grid;
     grid-template-columns: 1fr;
@@ -464,7 +518,7 @@ li {
   }
   .projects-card-area{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 2em; 
   }
   

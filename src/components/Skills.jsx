@@ -13,8 +13,8 @@ const Skills = () => (
           <li>Java</li>
           <li>Python</li>
           <li>SQL</li>
+          <li>NoSQL</li>
           <li>C#</li>
-          <li>GitHub</li>
         </ul>
       </div>
       <div>

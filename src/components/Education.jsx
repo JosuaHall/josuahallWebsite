@@ -3,6 +3,8 @@ import colorado from "../images/colorado3.png";
 import texas from "../images/Texas2.png";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 
 const card1Variant = {
   visible: { opacity: 1, x: 0, transition: { delay: 0.5, duration: 0.5 } },
@@ -37,7 +39,7 @@ function Education() {
   }, [animation2, inView]);
 
   return (
-    <div ref={ref} className="section white-font viewheight">
+    <div ref={ref} className="section black-font">
       <h2 className="heading">Education</h2>
       <div className="education-container">
         <motion.div
@@ -48,15 +50,24 @@ function Education() {
         >
           <img src={colorado} alt="" />
           <div className="education-card-text">
-            <h3>Pueblo, Colorado</h3>
-            <h4>2019 - 2022</h4>
+            <div className="d-flex align-items-center gap-3">
+              <FontAwesomeIcon icon={faGraduationCap} size="2x" />
+              <h3>
+                {" "}
+                ​Bachelor of Science,
+                <br />
+                in Computer Information Systems
+              </h3>
+            </div>
+
+            <h4 style={{ color: "grey" }}>2019 - 2022</h4>
             <br />
             <h4>Colorado State University</h4>
             <br />
             <h4>
-              ​Bachelor of Science,
+              Pueblo, Colorado
               <br />
-              in Computer Information Systems
+              United States
             </h4>
           </div>
         </motion.div>
@@ -69,15 +80,22 @@ function Education() {
         >
           <img src={texas} alt="" />
           <div className="education-card-text">
-            <h3>San Antonio, Texas</h3>
-            <h4>​2022 - 2024</h4>
+            <div className="d-flex align-items-center gap-3">
+              <FontAwesomeIcon icon={faGraduationCap} size="2x" />
+              <h3>
+                Masters of Science,
+                <br />
+                in Computer Science
+              </h3>
+            </div>
+            <h4 style={{ color: "grey" }}>​2022 - 2024</h4>
             <br />
             <h4>St. Mary's University</h4>
             <br />
             <h4>
-              Masters of Science,
+              San Antonio, Texas
               <br />
-              in Computer Science
+              United States
             </h4>
             ​
           </div>
