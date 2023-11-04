@@ -50,10 +50,9 @@ function Education() {
         >
           <img src={colorado} alt="" />
           <div className="education-card-text">
-            <div className="d-flex align-items-center gap-3">
+            <div className="d-flex align-items-center gap-2">
               <FontAwesomeIcon icon={faGraduationCap} size="2x" />
               <h3>
-                {" "}
                 ​Bachelor of Science,
                 <br />
                 in Computer Information Systems
@@ -80,7 +79,7 @@ function Education() {
         >
           <img src={texas} alt="" />
           <div className="education-card-text">
-            <div className="d-flex align-items-center gap-3">
+            <div className="d-flex align-items-center gap-2">
               <FontAwesomeIcon icon={faGraduationCap} size="2x" />
               <h3>
                 Masters of Science,

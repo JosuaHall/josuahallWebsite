@@ -46,7 +46,7 @@ p {
 
   border-bottom: solid rgb(167, 167, 167) 1px;
   margin: 0 auto;
-  width: 40%;
+  width: 80%;
 }
 
 
@@ -74,7 +74,7 @@ p {
 .content-container {
   color: #f5f5f7;
   text-align: center;
-  width: 80%;
+  width: 75%;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -228,10 +228,30 @@ p {
   text-align: center;
 }
 
+.list-project {
+  width: 100%;
+  padding-bottom: 1em;
+
+}
+
+.list-project > ul{
+  list-style-type: circle;
+  width: 80%;
+  margin: 0 auto !important;
+}
+.list-project * li{
+  margin-left:5%;
+  width: 100%;
+  padding-right: 20%;
+  text-align: left;
+  font-size: 16px !important;
+  padding: .2em 0;
+}
+
 .projects-container >p  {
   margin: 0 auto;
   width: 80%;
-  padding-bottom: 2.5em;
+  padding-bottom: 2em;
 
 }
 
@@ -242,7 +262,7 @@ p {
   gap: 2em;
   text-align: center;
   margin: 0 auto;
-  width: 95%;
+  width: 100%;
 }
 
 
@@ -268,8 +288,12 @@ p {
   width: 100%;
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
-
+  height: 100%;
   -webkit-filter: brightness(90%) contrast(95%) blur(0px) grayscale(10%);
+}
+
+.project-card img :hover{
+  transform: scale(2) !important;
 }
 
 .project-card-content {
@@ -425,6 +449,10 @@ li {
     text-align: center;
   }
 
+  .list-project * li{
+    font-size: .9em !important;
+  }
+
   .projects-container > p  {
     margin: 0 auto;
     width: 100%;
@@ -443,6 +471,11 @@ li {
     text-align: center;
   }
 
+  #desktopButton {
+    display: none;
+  }
+
+  
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -491,6 +524,9 @@ li {
     width: 80%;
   }
   
+  #desktopButton {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 1024px)  {
@@ -518,8 +554,8 @@ li {
   }
   .projects-card-area{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2em; 
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em; 
   }
   
   .header-container p {

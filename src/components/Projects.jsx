@@ -2,6 +2,7 @@ import React from "react";
 import athletia from "../images/athletia.PNG";
 import markushall from "../images/markushall.PNG";
 import inventorySite from "../images/InventoryManagementSystem.PNG";
+import jobfinderJobMatch from "../images/jobfinderJobMatch.JPG";
 import vid from "../images/athletiavid.mp4";
 import ss1 from "../images/Screenshot1.png";
 import ss2 from "../images/Screenshot2.png";
@@ -27,8 +28,26 @@ const Projects = () => (
         web/mobile development.
       </p>
       <div className="app-header">
-        <img src={logo} alt="" className="athletia-logo" />
-        <h3>Social Media App - Built with ReactNative</h3>
+        <img
+          src={logo}
+          alt=""
+          style={{ objectFit: "cover" }}
+          className="athletia-logo"
+        />
+        <h3>Social Media App - Built with React-Native</h3>
+
+        <button
+          style={{
+            backgroundColor: "#bd2c00",
+            border: "solid #bd2c00 1px",
+          }}
+          className="btn btn-primary mx-2"
+          onClick={() =>
+            window.open("https://github.com/JosuaHall/athletiaReactNativeApp")
+          }
+        >
+          Github
+        </button>
       </div>
       <div className="app-store-cards">
         <img src={ss1} alt="" className="app-store-card" />
@@ -51,26 +70,35 @@ const Projects = () => (
         <div className="project-card">
           <div className="project-card-content">
             <div>
-              <img src={inventorySite} alt="" />
+              <img src={jobfinderJobMatch} alt="" />
             </div>
             <div>
               <h4 className="text-center underline-project-card">
-                Inventory System
+                JobFinderAI
               </h4>
             </div>
-            <div>
+            <div className="list-project">
               <p>
-                I created a custom Inventory Management System for C&O Windows,
-                a local windows and doors manufacturer based in Colorado, using
-                Python Flask, Jinja2, and MySQL. The system streamlines
-                inventory management and tracks product movement, providing
-                real-time data on stock levels, orders, and reporting. The
-                interface is intuitive and integrates seamlessly with existing
-                systems. With robust reporting and analysis tools, the system
-                helps increase efficiency and accuracy in inventory management.
-                I am proud to have made a positive impact for this
-                Colorado-based company.
+                Created a job finder AI platform enabling users to match their
+                resumes with suitable jobs.
               </p>
+              <ul>
+                <li>
+                  Significantly improved job matching accuracy and relevance.
+                </li>
+                <li>
+                  Engineered the platform to harness k-Nearest Neighbor
+                  algorithm and vector search technology.
+                  <li>
+                    Enabled precise job matches based on user resumes, elevating
+                    the user experience and results significantly.
+                  </li>
+                </li>
+                <li>
+                  <u>Utilized</u>: React, Redux, Node, MongoDB, Vector Search,
+                  K-nearest Neighbor Algorithm, Large Language Model (OpenAI), R
+                </li>
+              </ul>
             </div>
           </div>
           <div>
@@ -87,6 +115,18 @@ const Projects = () => (
               >
                 Github
               </button>
+
+              <button
+                id="desktopButton"
+                style={{
+                  backgroundColor: "#007bff",
+                  border: "solid #007bff 1px",
+                }}
+                className="btn btn-success mx-2"
+                onClick={() => window.open("https://jobfinderai.netlify.app/")}
+              >
+                Live
+              </button>
             </span>
           </div>
         </div>
@@ -102,19 +142,35 @@ const Projects = () => (
             </div>
             <div>
               <p>
-                ​Athletia is a the full-stack web application of the ReactNative
-                App that utilizes the MERN stack (MongoDB, Express.js, React,
-                Node.js) and Redux store management to provide an interactive
-                platform for athletic event attendees. It offers a social
-                media-style interface and allows users to create their own
-                organizations and manage their teams and events. Attendees can
-                see who else is attending an event, and the app provides a
-                search function for teams and their schedules, as well as
-                livestream links. Team administrators can invite and manage
-                other administrators, and the app implements secure
-                authentication and authorization using JSON web-token and
-                password encryption with a hash algorithm.
+                Athletia is a comprehensive web application complemented by its
+                React Native mobile counterpart, offering a seamless full-stack
+                experience
               </p>
+
+              <div className="list-project">
+                <ul>
+                  <li>
+                    Enhanced user engagement and streamlined event management
+                    for a wide variety of college/club teams.
+                  </li>
+                  <li>
+                    Engineered a full-stack web app and a React Native mobile
+                    app.
+                  </li>
+                  <li>
+                    Designed RESTful backend server for organizations, teams,
+                    events, ensuring seamless cross-platform experience.
+                  </li>
+                  <li>
+                    Implemented robust authentication and data security using
+                    JSON web-token and password encryption.
+                  </li>
+                  <li>
+                    <u>Utilized</u>: JavaScript, React.js, React Native, Redux,
+                    Node.js, Express.js, NoSQL, MongoDB, JSON Web Token
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
           <div>
@@ -127,6 +183,65 @@ const Projects = () => (
                 className="btn btn-primary mx-2"
                 onClick={() =>
                   window.open("https://github.com/JosuaHall/athletia-client")
+                }
+              >
+                Github
+              </button>
+            </span>
+          </div>
+        </div>
+        <div className="project-card">
+          <div className="project-card-content">
+            <div>
+              <img src={inventorySite} alt="" />
+            </div>
+            <div>
+              <h4 className="text-center underline-project-card">
+                Inventory System
+              </h4>
+            </div>
+            <div>
+              <p>
+                I created a custom Inventory Management System for C&O Windows,
+                a local windows and doors manufacturer based in Colorado. I am
+                proud to have made a positive impact for this Colorado-based
+                company.
+              </p>
+
+              <div className="list-project">
+                <ul>
+                  <li>
+                    Led a team of 4 students in a successful Scrum project.
+                  </li>
+                  <li>Achieved project milestones and client satisfaction.</li>
+                  <li>
+                    The system streamlines inventory management and tracks
+                    product movement, providing real-time data on stock levels,
+                    orders, and reporting.
+                  </li>
+                  <li>
+                    Effectively distributed tasks, conducted regular client
+                    meetings, and ensured efficient communication, resulting in
+                    the timely completion of project goals.
+                  </li>
+                  <li>
+                    <u>Utilized</u>: Microsoft Project, Python, Flask, Jinja2,
+                    SQL, HTML, and CSS.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div>
+            <span>
+              <button
+                style={{
+                  backgroundColor: "#bd2c00",
+                  border: "solid #bd2c00 1px",
+                }}
+                className="btn btn-primary mx-2"
+                onClick={() =>
+                  window.open("https://github.com/JosuaHall/inventorySystem")
                 }
               >
                 Github
