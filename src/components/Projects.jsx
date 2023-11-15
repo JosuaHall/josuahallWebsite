@@ -110,7 +110,7 @@ const Projects = () => (
                 }}
                 className="btn btn-primary mx-2"
                 onClick={() =>
-                  window.open("https://github.com/JosuaHall/inventorySystem")
+                  window.open("https://github.com/JosuaHall/jobfinderServer")
                 }
               >
                 Github
