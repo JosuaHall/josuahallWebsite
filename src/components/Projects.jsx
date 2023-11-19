@@ -202,8 +202,8 @@ const Projects = () => (
             </div>
             <div>
               <p>
-                I created a custom Inventory Management System for C&O Windows,
-                a local windows and doors manufacturer based in Colorado. I am
+                Created a custom Inventory Management System for C&O Windows, a
+                local windows and doors manufacturer based in Colorado. I am
                 proud to have made a positive impact for this Colorado-based
                 company.
               </p>
