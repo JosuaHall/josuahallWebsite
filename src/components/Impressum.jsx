@@ -8,11 +8,11 @@ const Impressum = () => (
         <p>
           ​Josua Hall
           <br />
-          halljosua@web.de
+          halljosua@gmail.com
           <br />
           Phone Number
           <br />
-          (210) 725 - 7061
+          (210) 708 - 7635
         </p>
       </div>
       <div>
