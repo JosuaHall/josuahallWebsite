@@ -1,6 +1,5 @@
 import React from "react";
 import athletia from "../images/athletia.PNG";
-import markushall from "../images/markushall.PNG";
 import inventorySite from "../images/InventoryManagementSystem.PNG";
 import jobfinderJobMatch from "../images/jobfinderJobMatch.JPG";
 import vid from "../images/athletiavid.mp4";
@@ -10,8 +9,6 @@ import ss3 from "../images/Screenshot3.png";
 import ss4 from "../images/Screenshot4.png";
 import ss5 from "../images/Screenshot5.png";
 import logo from "../images/athletia_app_logo.png";
-import AliceCarousel from "react-alice-carousel";
-import { Fragment } from "react";
 
 const Projects = () => (
   <div className="section white-font">

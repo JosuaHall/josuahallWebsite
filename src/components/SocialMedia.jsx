@@ -6,7 +6,7 @@ const SocialMedia = () => (
     <h2>Social Media</h2>
     <div className="social-media-container">
       <div className="social-icons">
-        <div onClick={() => window.open("mailto:halljosua@web.de")}>
+        <div onClick={() => window.open("mailto:halljosua@gmail.com")}>
           <FontAwesomeIcon
             icon={["fab", "google"]}
             size={"2x"}
