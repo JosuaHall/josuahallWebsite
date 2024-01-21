@@ -26,16 +26,16 @@ function App() {
 
       <div className="full-width-background-white">
         <div className="content-container">
-          <section id="skills">
-            <Skills />
+          <section id="projects">
+            <Projects />
           </section>
         </div>
       </div>
 
       <div className="full-width-background-black">
         <div className="content-container">
-          <section id="projects">
-            <Projects />
+          <section id="skills">
+            <Skills />
           </section>
         </div>
       </div>
@@ -46,6 +46,14 @@ function App() {
         <div className="content-container">
           <section id="education">
             <Education />
+          </section>
+        </div>
+      </div>
+
+      <div className="full-width-background-black">
+        <div className="content-container">
+          <section id="about">
+            <About />
           </section>
         </div>
       </div>

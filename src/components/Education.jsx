@@ -40,7 +40,9 @@ function Education() {
 
   return (
     <div ref={ref} className="section black-font">
-      <h2 className="heading">Education</h2>
+      <h2 className="heading">
+        <FontAwesomeIcon icon={faGraduationCap} size="1x" /> Education
+      </h2>
       <div className="education-container">
         <motion.div
           variants={card1Variant}
@@ -51,23 +53,22 @@ function Education() {
           <img src={colorado} alt="" />
           <div className="education-card-text">
             <div className="d-flex align-items-center gap-2">
-              <FontAwesomeIcon icon={faGraduationCap} size="2x" />
               <h3>
-                ​Bachelor of Science,
+                ​B.Sc.,
                 <br />
                 in Computer Information Systems
               </h3>
             </div>
 
             <h4 style={{ color: "grey" }}>2019 - 2022</h4>
-            <br />
+
             <h4>Colorado State University</h4>
-            <br />
-            <h4>
+
+            <h5 style={{ color: "grey" }}>
               Pueblo, Colorado
               <br />
               United States
-            </h4>
+            </h5>
           </div>
         </motion.div>
         <motion.div
@@ -80,22 +81,19 @@ function Education() {
           <img src={texas} alt="" />
           <div className="education-card-text">
             <div className="d-flex align-items-center gap-2">
-              <FontAwesomeIcon icon={faGraduationCap} size="2x" />
               <h3>
-                Masters of Science,
+                M.Sc.,
                 <br />
                 in Computer Science
               </h3>
             </div>
             <h4 style={{ color: "grey" }}>​2022 - 2024</h4>
-            <br />
             <h4>St. Mary's University</h4>
-            <br />
-            <h4>
+            <h5 style={{ color: "grey" }}>
               San Antonio, Texas
               <br />
               United States
-            </h4>
+            </h5>
             ​
           </div>
         </motion.div>

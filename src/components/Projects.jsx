@@ -8,10 +8,10 @@ import ss2 from "../images/Screenshot2.png";
 import ss3 from "../images/Screenshot3.png";
 import ss4 from "../images/Screenshot4.png";
 import ss5 from "../images/Screenshot5.png";
-import logo from "../images/athletia_app_logo.png";
+import logo from "../images/appicon.png";
 
 const Projects = () => (
-  <div className="section white-font">
+  <div className="section black-font">
     <section className="viewheight">
       <h2 className="heading">My Projects</h2>
       <p className="mb-5">
@@ -31,7 +31,7 @@ const Projects = () => (
           style={{ objectFit: "cover" }}
           className="athletia-logo"
         />
-        <h3>Social Media App - Built with React-Native</h3>
+        <h3>Co-Founder & Lead Software Engineer of Athletia</h3>
 
         <button
           style={{
@@ -45,6 +45,18 @@ const Projects = () => (
         >
           Github
         </button>
+        <button
+          style={{
+            backgroundColor: "#317af3",
+            border: "solid #317af3 1px",
+          }}
+          className="btn btn-primary mx-2"
+          onClick={() =>
+            window.open("https://apps.apple.com/hu/app/athletia/id6463032641")
+          }
+        >
+          App Store
+        </button>
       </div>
       <div className="app-store-cards">
         <img src={ss1} alt="" className="app-store-card" />
@@ -56,7 +68,22 @@ const Projects = () => (
         </div>
       </div>
 
-      <video controls className="my-5 vid">
+      <p className="my-4">
+        Spearheaded Athletia’s full-stack development, transforming sports event
+        platforms for fan-centric engagement. <br /> Developed and refined
+        end-to-end business logic, maintaining complete control from client to
+        server to database.
+        <br /> Conducted an intensive 3-month test phase involving 500 students,
+        utilizing an agile development approach for continuous improvement based
+        on invaluable user feedback, resulting in a 20% increase in game
+        attendance.
+      </p>
+      <p>
+        - Leveraged knowledge: JavaScript, React, React Native, Redux, Node.js,
+        Express.js, RESTful API, MongoDB.
+      </p>
+
+      <video controls className="my-0  padding-0 vid">
         <source src={vid} type="video/mp4" />
       </video>
     </section>
@@ -76,24 +103,28 @@ const Projects = () => (
             </div>
             <div className="list-project">
               <p>
-                Created a job finder AI platform enabling users to match their
-                resumes with suitable jobs.
+                Collaborated on developing the JobFinderAI platform, enabling
+                users to match their resumes with suitable jobs.
               </p>
               <ul>
                 <li>
-                  Significantly improved job matching accuracy and relevance.
+                  Managed and matched over 60,000 jobs stored in the database
+                  across various states.
                 </li>
                 <li>
                   Engineered the platform to harness k-Nearest Neighbor
-                  algorithm and vector search technology.
-                  <li>
-                    Enabled precise job matches based on user resumes, elevating
-                    the user experience and results significantly.
-                  </li>
+                  algorithm and vector search technology to reduce job matching
+                  time, enhance precision, and empower users to discover
+                  relevant job recommendations and perfect matches.
+                </li>
+                <li>
+                  Improved job matching accuracy with machine learning,
+                  including natural language processing, leading to fewer
+                  mismatches and increased successful job matches.
                 </li>
                 <li>
                   <u>Utilized</u>: React, Redux, Node, MongoDB, Vector Search,
-                  K-nearest Neighbor Algorithm, Large Language Model (OpenAI), R
+                  k-Nearest Neighbor Algorithm, Large Language Model, R
                 </li>
               </ul>
             </div>
@@ -199,10 +230,10 @@ const Projects = () => (
             </div>
             <div>
               <p>
-                Created a custom Inventory Management System for C&O Windows, a
-                local windows and doors manufacturer based in Colorado. I am
-                proud to have made a positive impact for this Colorado-based
-                company.
+                Led a team of 4 associates in executing a successful Scrum
+                project for a business in Colorado, optimizing real-time
+                tracking and resulting in a 15% increase in profit through
+                enhanced cash flow management and expense control.
               </p>
 
               <div className="list-project">
@@ -210,16 +241,15 @@ const Projects = () => (
                   <li>
                     Led a team of 4 students in a successful Scrum project.
                   </li>
-                  <li>Achieved project milestones and client satisfaction.</li>
                   <li>
-                    The system streamlines inventory management and tracks
-                    product movement, providing real-time data on stock levels,
-                    orders, and reporting.
+                    Distributed tasks effectively, conducted weekly client
+                    meetings, and created a Gantt chart using Microsoft Project
+                    for comprehensive project planning and scheduling, resulting
+                    in the timely completion of project goals.
                   </li>
                   <li>
-                    Effectively distributed tasks, conducted regular client
-                    meetings, and ensured efficient communication, resulting in
-                    the timely completion of project goals.
+                    Designed and implemented an efficient Inventory Management
+                    System, reducing tracking errors by 25%.
                   </li>
                   <li>
                     <u>Utilized</u>: Microsoft Project, Python, Flask, Jinja2,
