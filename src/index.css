@@ -141,6 +141,7 @@ p {
 
 .about-me-container * h5 {
   font-weight: bold;
+  
 }
 
 .about-me-container div {
@@ -591,7 +592,7 @@ li {
     font-size: 18px !important;
   }
   p {
-    font-size: 16px;
+    font-size: 14px !important;
   }
   .projects-card-area{
     display: grid;
@@ -607,5 +608,9 @@ li {
   .education-card{
     margin: 0 auto;
     width: 80%;
+  }
+
+  .about-me-container p {
+    font-size: 16px !important;
   }
 }
