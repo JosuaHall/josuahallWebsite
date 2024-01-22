@@ -36,6 +36,11 @@ const Navigation = () => (
           </Link>
         </Nav.Link>
         <Nav.Link as="div" style={{ cursor: "pointer" }}>
+          <Link activeClass="active" offset={-64} smooth spy to="about">
+            About Me
+          </Link>
+        </Nav.Link>
+        <Nav.Link as="div" style={{ cursor: "pointer" }}>
           <Link activeClass="active" offset={-64} smooth spy to="socialmedia">
             Social
           </Link>
