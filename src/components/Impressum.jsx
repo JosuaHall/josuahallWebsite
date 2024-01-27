@@ -12,7 +12,7 @@ const Impressum = () => (
           <br />
           Phone Number
           <br />
-          (210) 708 - 7635
+          (210) 849-2350
         </p>
       </div>
       <div>
