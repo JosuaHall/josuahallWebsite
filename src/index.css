@@ -506,7 +506,18 @@ li {
   .projects-container :nth-child(odd) {
     scale: 1;
   }
+
+  .app-header {
+    font-size: smaller;
+  }
+
+  .app-header button {
+    font-size: smaller;
+  }
   
+  .athletia-logo {
+    width: 75px;
+  }
 
   .impressum-container {
     grid-template-columns: 1fr;

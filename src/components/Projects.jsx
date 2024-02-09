@@ -39,11 +39,9 @@ const Projects = () => (
             border: "solid #bd2c00 1px",
           }}
           className="btn btn-primary mx-2"
-          onClick={() =>
-            window.open("https://github.com/JosuaHall/athletiaReactNativeApp")
-          }
+          onClick={() => window.open("https://athletia.app")}
         >
-          Github
+          Website
         </button>
         <button
           style={{
