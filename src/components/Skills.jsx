@@ -42,6 +42,7 @@ const Skills = () => (
           <li>CSS</li>
           <li>Bootstrap</li>
           <li>Java</li>
+          <li>Spring Boot</li>
           <li>C#</li>
           <li>Git</li>
           <li>Linux</li>
